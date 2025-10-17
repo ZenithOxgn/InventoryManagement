@@ -15,7 +15,7 @@ Route::prefix('v1')->group(function(){
     Route::apiResource('items',ItemController::class);
 
     //Inventory Category Routes (Crud)
-    Route::apiResource('category', CategoryController::class);
+    Route::apiResource('categories', CategoryController::class);
 });
 
 Route::middleware('auth:sanctum')->get('/user',function(Request $request){

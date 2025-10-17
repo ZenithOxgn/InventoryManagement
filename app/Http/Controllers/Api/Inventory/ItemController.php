@@ -84,11 +84,11 @@ class ItemController extends Controller
 
 
     public function destroy(Item $item){
-            $item->delete();
-            return response()->json([
+        $item->delete();
+        return response()->json([
             'status' => 'success',
-            'message' => 'Item created successfully.',
-            ],200);
+            'message' => 'Item deleted successfully.',
+        ],200);
     }
 }
 
