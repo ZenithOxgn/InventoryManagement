@@ -25,7 +25,7 @@ class ItemResource extends JsonResource
                 ];
             }),
             'current_stock' => (int)$this->stock_level,
-            'unit_prince '=> number_format((float)$this->price,2),
+            'unit_price'=> number_format((float)$this->price,2),
             'added_on' => $this->created_at->format('Y-m-d H:i:s'),
         ];
     }
